@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Super Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="logo">
+      <h1>Mon Super Site</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section d'accueil -->
+  <section id="accueil">
+    <h2>Bienvenue sur mon site !</h2>
+    <p>Voici une brève introduction sur ce que tu fais.</p>
+  </section>
+
+  <!-- Section des services -->
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="service-item">
+      <h3>Service 1</h3>
+      <p>Description du service 1.</p>
+    </div>
+    <div class="service-item">
+      <h3>Service 2</h3>
+      <p>Description du service 2.</p>
+    </div>
+    <div class="service-item">
+      <h3>Service 3</h3>
+      <p>Description du service 3.</p>
+    </div>
+  </section>
+
+  <!-- Section de contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 Mon Super Site</p>
+  </footer>
+</body>
+</html>
